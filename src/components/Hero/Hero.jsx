@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import endwalker from '../../assets/video/endwalker.mp4'
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -25,8 +26,7 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       
       <video id="background-video" loop autoPlay muted>
-        <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4" type="video/mkv" />
-        <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4" type="video/ogg" />
+        <source src={endwalker} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       
