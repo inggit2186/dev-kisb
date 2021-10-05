@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Staatliches&display=swap');
+
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover; */
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    filter: brightness(20%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 3.1rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 8.8rem;
+    text-align: left;
+    color:floralwhite;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+
+    .text-color-main {
+      font-size: 9.1rem;
+      font-family: 'Bangers', cursive;
+      letter-spacing: 2px;
+    }
+
+  }
+
+  .hero-cta {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+      font-family: 'Staatliches', cursive;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
