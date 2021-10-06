@@ -7,6 +7,13 @@ export const headData = {
   description: '', // e.g: Welcome to my website
 };
 
+
+// HEADER DATA
+export const headerData = {
+  menu: '',
+  submenu: '',
+};
+
 // HERO DATA
 export const heroData = {
   title: '',
