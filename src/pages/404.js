@@ -8,9 +8,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { headData } from '../mock/data';
 import '../style/main.scss';
 
-export default () => {
+const Default = () => { 
+  
   const { lang } = headData;
-
+  
   return (
     <>
       <Helmet>
@@ -41,3 +42,4 @@ export default () => {
     </>
   );
 };
+export default Default; 
