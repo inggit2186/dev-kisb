@@ -32,7 +32,7 @@ export const aboutData = {
 };
 
 // PROJECTS DATA
-export const projectsData = [
+export const agendaData = [
   {
     id: nanoid(),
     img: 'project.jpg',

@@ -6,8 +6,10 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../../assets/Image/ProjectImg';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Agenda = () => {
+  const { agenda } = useContext(PortfolioContext);
+
+  const date = new Date();
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -20,100 +22,57 @@ const Projects = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
+
+
   }, []);
 
   return (
-    <section id="projects">
-      <Container>
-        <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+    <Container>
+      <section id="agenda">
 
-            return (
-              <Row key={id}>
-                <Col lg={4} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
-                      <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+      <div className="agenda-head has-border">
+        <img class="agenda-icon" src="https://image.ibb.co/gpBreT/basic_alarm.png" alt="Alarm Icon" />
+        <h2>&nbsp;AGENDA</h2>
+      </div>
 
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    right={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
-                    </div>
-                  </Fade>
-                </Col>
-              </Row>
-            );
-          })}
+      <h2 class="agenda-subheading">• Jadwal Sidang •
+      <br /> • Komisi Informasi Provinsi Sumatera Barat • 
+      <br />{date.getDate()} {date.getMonth()} {date.getFullYear()} 
+      <br />Auditorium</h2>
+      <div class="events-container">
+        <div class="event-hours-container">
+          <p class="event-hours">8:00 AM</p>
+          <p class="event-hours">8:30 AM</p>
+          <p class="event-hours">9:00 AM - 12:00 AM</p>
+          <p class="event-hours">12:30 PM - 1:30 PM</p>
+          <p class="event-hours">1:30 PM - 5:30 PM</p>
+          <p class="event-hours">5:00 PM</p>
+          <p class="event-hours">6:00 PM - 9:00 PM</p>
+          <p class="event-hours">9:00 PM</p>
+          <p class="event-hours">7:30 PM - 9:00 PM</p>
         </div>
-      </Container>
+
+        <div class="event-title-container">
+          <p class="event-title">Sidang Awal</p>
+          <p class="event-title">Mediasi</p>
+          <p class="event-title">Sidang ke2</p>
+          <p class="event-title">Sidang ke3</p>
+          <p class="event-title">Sidang ke4</p>
+          <p class="event-title">Sidang ke5</p>
+          <div class="featured-event">
+
+            <img class="event-icon" src="https://image.ibb.co/frOF68/basic_todo_txt.png" alt="" />
+
+            <p class="feat-event-heading">The Conference talks</p>
+            <p class="feat-event">Oh dear! She's stuck in an infinite loop, and he's an idiot! Well, that's love for you. Uhh… also, comes with double prize money. It doesn't look so shiny to me.</p>
+          </div>
+          <p class="event-title">Kegiatan ke1</p>
+          <p class="event-title">Kegiatan ke2</p>
+        </div>
+      </div>
     </section>
-  );
+    </Container>
+      );
 };
 
-export default Projects;
+export default Agenda;

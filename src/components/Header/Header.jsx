@@ -34,7 +34,7 @@ const Header = () => {
           <Link to="about" smooth duration={1000}>
             {menu || 'About'}
           </Link>
-          <Link to="project" smooth duration={1000}>
+          <Link to="projects" smooth duration={1000}>
             {menu || 'Schedule'}
           </Link>
           <Link to="title" smooth duration={1000}>
