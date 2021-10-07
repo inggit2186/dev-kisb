@@ -1,4 +1,9 @@
 # Komisi Informasi Sumatera Barat
-Development Official Website KISB
+<center>
+---------------------------
+| Development in Progress |
+---------------------------
+Source Code Official Website KISB
 
 Nothing to see here :D
+</center>
