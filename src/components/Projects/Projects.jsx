@@ -27,9 +27,9 @@ const Agenda = () => {
   }, []);
 
   return (
-    <Container>
+   
       <section id="agenda">
-
+      <Container>
       <div className="agenda-head has-border">
         <img class="agenda-icon" src="https://image.ibb.co/gpBreT/basic_alarm.png" alt="Alarm Icon" />
         <h2>&nbsp;AGENDA</h2>
@@ -70,8 +70,8 @@ const Agenda = () => {
           <p class="event-title">Kegiatan ke2</p>
         </div>
       </div>
+      </Container>
     </section>
-    </Container>
       );
 };
 

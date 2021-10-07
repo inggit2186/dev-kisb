@@ -34,9 +34,12 @@ const About = () => {
           <h2>&nbsp;PROFIL</h2>
         </div>
         <div className="main-speaker">
+        <Fade left duration={1000} delay={800} distance="30px">
           <div className="main-speaker-img-container">
             <img src={aboutImg} alt="Tentang KI" />
           </div>
+          </Fade>
+          <Fade right duration={1000} delay={800} distance="30px">
           <div className="main-speaker-info">
             <h3>Tentang Komisi Informasi</h3>
             <p>Komisi Informasi adalah Lembaga Negara yang menjalankan <b>Undang-Undang no. 14 tahun 2008</b> tentang <b>Keterbukaan Informasi Publik</b> dan peraturan Pelaksanaannya.
@@ -44,7 +47,10 @@ const About = () => {
             <br />Dan Menyelesaikan Sengketa Informasi Publik melalui Mediasi dan/atau Ajudikasi non-litigasi.</p>
             <span className="tip1" />
           </div>
+          </Fade>
         </div>
+
+        <Fade left duration={1000} delay={800} distance="30px">
         <div className="speakers-container">
           <div className="speaker">
             <div className="speaker-img-container">
@@ -81,6 +87,9 @@ const About = () => {
             </div>
           </div>
         </div>
+        </Fade>
+
+        <Fade right duration={1000} delay={800} distance="30px">
         <div className="speakers-container">
           <div className="speaker">
             <div className="speaker-info">
@@ -110,6 +119,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        </Fade>
       </section>
   );
 };

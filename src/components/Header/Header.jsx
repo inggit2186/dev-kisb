@@ -34,10 +34,10 @@ const Header = () => {
           <Link to="about" smooth duration={1000}>
             {menu || 'About'}
           </Link>
-          <Link to="projects" smooth duration={1000}>
+          <Link to="agenda" smooth duration={1000}>
             {menu || 'Schedule'}
           </Link>
-          <Link to="title" smooth duration={1000}>
+          <Link to="news" smooth duration={1000}>
             {menu || 'News'}
           </Link>
           <Link to="footer" smooth duration={1000}>

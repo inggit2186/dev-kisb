@@ -36,9 +36,10 @@ export const agendaData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    date: '',
+    place: '',
+    time: '',
+    sidang:'',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
@@ -61,6 +62,16 @@ export const agendaData = [
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
 ];
+
+// NEWS DATA
+export const newsData = {
+  date: '',
+  title: '',
+  intro: '',
+  img:'',
+  isi:'',
+  tag:'',
+}
 
 // CONTACT DATA
 export const contactData = {
