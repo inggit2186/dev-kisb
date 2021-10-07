@@ -5,6 +5,12 @@ import Title from '../Title/Title';
 import AboutImg from '../../assets/Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
+import aboutImg from '../../assets/images/about.png'
+import tugasImg from '../../assets/images/tugas.png'
+import wewenangImg from '../../assets/images/wewenang.png'
+import visiImg from '../../assets/images/visi.jpg'
+import misiImg from '../../assets/images/misi.png'
+
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
@@ -29,7 +35,7 @@ const About = () => {
         </div>
         <div className="main-speaker">
           <div className="main-speaker-img-container">
-            <img src="https://images.pexels.com/photos/897314/pexels-photo-897314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Photo of a woman" />
+            <img src={aboutImg} alt="Tentang KI" />
           </div>
           <div className="main-speaker-info">
             <h3>Tentang Komisi Informasi</h3>
@@ -42,7 +48,7 @@ const About = () => {
         <div className="speakers-container">
           <div className="speaker">
             <div className="speaker-img-container">
-              <img src="https://images.pexels.com/photos/953266/pexels-photo-953266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Photo of a woman" />
+              <img src={tugasImg} alt="Tugas KI" />
             </div>
             <div className="speaker-info">
               <h3>Tugas</h3>
@@ -59,7 +65,7 @@ const About = () => {
           </div>
           <div className="speaker">
             <div className="speaker-img-container">
-              <img src="https://images.pexels.com/photos/253758/pexels-photo-253758.jpeg?h=350&auto=compress&cs=tinysrgb" alt="Photo of a woman" />
+              <img src={wewenangImg} alt="Wewenang KI" />
             </div>
             <div className="speaker-info">
               <h3>Wewenang</h3>
@@ -83,7 +89,7 @@ const About = () => {
                 <span className="tip4" />
             </div>
             <div className="speaker-img-container">
-              <img src="https://images.pexels.com/photos/818819/pexels-photo-818819.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Photo of a woman" />
+              <img src={visiImg} alt="Visi KI" />
             </div>
           </div>
           <div className="speaker">
@@ -100,7 +106,7 @@ const About = () => {
               <span className="tip5" />
             </div>
             <div className="speaker-img-container">
-              <img src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Photo of a woman" />
+              <img src={misiImg} alt="Misi KI" />
             </div>
           </div>
         </div>
