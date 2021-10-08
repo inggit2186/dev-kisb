@@ -55,7 +55,7 @@ const Agenda = () => {
               <p className="date-day">Senin</p>
             </div>
             <div className="events">
-              <div className="event start-2 end-5 securities">
+              <div className="event start-9 end-11 securities">
                 <p className="title">Sidang Register KI/09/21/002</p>
                 <p className="time">09:00 - Selesei</p>
               </div>
@@ -67,11 +67,11 @@ const Agenda = () => {
               <p className="date-day">Selasa</p>
             </div>
             <div className="events">
-              <div className="event start-10 end-12 corp-fi">
+              <div className="event start-11 end-13 corp-fi">
                 <p className="title">Sidang Register KI/09/21/002</p>
                 <p className="time">11:00 - Selesei</p>
               </div>
-              <div className="event start-1 end-4 ent-law">
+              <div className="event start-13 end-14 ent-law">
                 <p className="title">Sidang Register KI/09/21/003</p>
                 <p className="time">13:00 - Selesei</p>
               </div>
@@ -83,11 +83,11 @@ const Agenda = () => {
               <p className="date-day">Rabu</p>
             </div>
             <div className="events">
-              <div className="event start-12 end-1 writing">
+              <div className="event start-9 end-11 writing">
                 <p className="title">Sidang Register KI/09/21/004</p>
                 <p className="time">09:00 - Selesei</p>
               </div>
-              <div className="event start-2 end-5 securities">
+              <div className="event start-15 end-16 securities">
                 <p className="title">Sidang Register KI/09/21/005</p>
                 <p className="time">13:00 - Selesei</p>
               </div>
@@ -103,7 +103,7 @@ const Agenda = () => {
                 <p className="title">Sidang Register KI/09/21/006</p>
                 <p className="time">10:00 - Selesei</p>
               </div>
-              <div className="event start-1 end-4 ent-law">
+              <div className="event start-14 end-17 ent-law">
                 <p className="title">Sidang Register KI/09/21/007</p>
                 <p className="time">13:00 - Selesei</p>
               </div>
