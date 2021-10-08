@@ -34,42 +34,92 @@ const Agenda = () => {
         <img class="agenda-icon" src="https://image.ibb.co/gpBreT/basic_alarm.png" alt="Alarm Icon" />
         <h2>&nbsp;AGENDA</h2>
       </div>
-
-      <h2 class="agenda-subheading">• Jadwal Sidang •
-      <br /> • Komisi Informasi Provinsi Sumatera Barat • 
-      <br />{date.getDate()} {date.getMonth()} {date.getFullYear()} 
-      <br />Auditorium</h2>
-      <div class="events-container">
-        <div class="event-hours-container">
-          <p class="event-hours">8:00 AM</p>
-          <p class="event-hours">8:30 AM</p>
-          <p class="event-hours">9:00 AM - 12:00 AM</p>
-          <p class="event-hours">12:30 PM - 1:30 PM</p>
-          <p class="event-hours">1:30 PM - 5:30 PM</p>
-          <p class="event-hours">5:00 PM</p>
-          <p class="event-hours">6:00 PM - 9:00 PM</p>
-          <p class="event-hours">9:00 PM</p>
-          <p class="event-hours">7:30 PM - 9:00 PM</p>
+      <div className="calendar">
+        <div className="timeline">
+          <div className="spacer" />
+          <div className="time-marker">08:00</div>
+          <div className="time-marker">09:00</div>
+          <div className="time-marker">10:00</div>
+          <div className="time-marker">11:00</div>
+          <div className="time-marker">12:00</div>
+          <div className="time-marker">13:00</div>
+          <div className="time-marker">14:00</div>
+          <div className="time-marker">15:00</div>
+          <div className="time-marker">16:00</div>
+          <div className="time-marker">17:00</div>
         </div>
-
-        <div class="event-title-container">
-          <p class="event-title">Sidang Awal</p>
-          <p class="event-title">Mediasi</p>
-          <p class="event-title">Sidang ke2</p>
-          <p class="event-title">Sidang ke3</p>
-          <p class="event-title">Sidang ke4</p>
-          <p class="event-title">Sidang ke5</p>
-          <div class="featured-event">
-
-            <img class="event-icon" src="https://image.ibb.co/frOF68/basic_todo_txt.png" alt="" />
-
-            <p class="feat-event-heading">The Conference talks</p>
-            <p class="feat-event">Oh dear! She's stuck in an infinite loop, and he's an idiot! Well, that's love for you. Uhh… also, comes with double prize money. It doesn't look so shiny to me.</p>
+        <div className="days">
+          <div className="day mon">
+            <div className="date">
+              <p className="date-num">9</p>
+              <p className="date-day">Senin</p>
+            </div>
+            <div className="events">
+              <div className="event start-2 end-5 securities">
+                <p className="title">Sidang Register KI/09/21/002</p>
+                <p className="time">09:00 - Selesei</p>
+              </div>
+            </div>
           </div>
-          <p class="event-title">Kegiatan ke1</p>
-          <p class="event-title">Kegiatan ke2</p>
+          <div className="day tues">
+            <div className="date">
+              <p className="date-num">10</p>
+              <p className="date-day">Selasa</p>
+            </div>
+            <div className="events">
+              <div className="event start-10 end-12 corp-fi">
+                <p className="title">Sidang Register KI/09/21/002</p>
+                <p className="time">11:00 - Selesei</p>
+              </div>
+              <div className="event start-1 end-4 ent-law">
+                <p className="title">Sidang Register KI/09/21/003</p>
+                <p className="time">13:00 - Selesei</p>
+              </div>
+            </div>
+          </div>
+          <div className="day wed">
+            <div className="date">
+              <p className="date-num">11</p>
+              <p className="date-day">Rabu</p>
+            </div>
+            <div className="events">
+              <div className="event start-12 end-1 writing">
+                <p className="title">Sidang Register KI/09/21/004</p>
+                <p className="time">09:00 - Selesei</p>
+              </div>
+              <div className="event start-2 end-5 securities">
+                <p className="title">Sidang Register KI/09/21/005</p>
+                <p className="time">13:00 - Selesei</p>
+              </div>
+            </div>
+          </div>
+          <div className="day thurs">
+            <div className="date">
+              <p className="date-num">12</p>
+              <p className="date-day">Kamis</p>
+            </div>
+            <div className="events">
+              <div className="event start-10 end-12 corp-fi">
+                <p className="title">Sidang Register KI/09/21/006</p>
+                <p className="time">10:00 - Selesei</p>
+              </div>
+              <div className="event start-1 end-4 ent-law">
+                <p className="title">Sidang Register KI/09/21/007</p>
+                <p className="time">13:00 - Selesei</p>
+              </div>
+            </div>
+          </div>
+          <div className="day fri">
+            <div className="date">
+              <p className="date-num">13</p>
+              <p className="date-day">Jum'at</p>
+            </div>
+            <div className="events">
+            </div>
+          </div>
         </div>
       </div>
+      
       </Container>
     </section>
       );
