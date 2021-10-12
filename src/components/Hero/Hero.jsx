@@ -1,9 +1,11 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
+import { Link } from 'gatsby';
 import PortfolioContext from '../../context/context';
-import endwalker from '../../assets/video/endwalker.mp4'
+import endwalker from '../../assets/video/endwalker.mp4';
+
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -43,9 +45,9 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
+              <AniLink paintDrip to='../home' duration={1}>
                 {cta || 'Selengkapnya..'}
-              </Link>
+              </AniLink>
             </span>
           </p>
         </Fade>

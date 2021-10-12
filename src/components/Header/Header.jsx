@@ -28,7 +28,7 @@ const Header = () => {
         <div>
         <div className="menu-btn">Menu</div>
         <nav className={headerClassName} >
-          <Link to="hero" smooth duration={1000}>
+          <Link to="../index" smooth duration={1000}>
             {menu || 'Home'}
           </Link>
           <Link to="about" smooth duration={1000}>

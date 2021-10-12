@@ -22,6 +22,13 @@ export const heroData = {
   cta: '',
 };
 
+// HEAD DATA
+export const topData = {
+  title: '',
+  date: '',
+  Intro: '',
+};
+
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',

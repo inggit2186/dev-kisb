@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header/Header';
-import Hero from './Hero/Hero';
+import Top from './Top/Top';
 import About from './About/About';
 import Agenda from './Projects/Projects';
 import News from './News/News';
@@ -9,11 +9,11 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { headerData, heroData, aboutData, agendaData, newsData, contactData, footerData } from '../mock/data';
+import { headerData, topData, aboutData, agendaData, newsData, contactData, footerData } from '../mock/data';
 
 function App() {
   const [header, setHeader] = useState({});
-  const [hero, setHero] = useState({});
+  const [top, setTop] = useState({});
   const [about, setAbout] = useState({});
   const [agenda, setAgenda] = useState([]);
   const [news, setNews] = useState({});
@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     setHeader({ ...headerData});
-    setHero({ ...heroData });
+    setTop({ ...topData });
     setAbout({ ...aboutData });
     setAgenda([...agendaData]);
     setNews({...newsData});
@@ -31,9 +31,9 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ header, hero, about, agenda, news, contact, footer }}>
+    <PortfolioProvider value={{ header, top, about, agenda, news, contact, footer }}>
       <Header />
-      <Hero />
+      <Top />
       <About />
       <Agenda />
       <News />

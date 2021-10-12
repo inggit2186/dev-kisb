@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import App from '../components/App';
+import Intro from '../components/Intro';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
@@ -16,7 +16,7 @@ const Default = () => {
         <html lang={lang || 'en'} />
         <meta name="description" content={description || 'Komisi Informasi Sumatera Barat'} />
       </Helmet>
-      <App />
+      <Intro />
     </>
   );
 };
