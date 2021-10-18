@@ -28,7 +28,7 @@ const Header = () => {
         <div>
         <div className="menu-btn">Menu</div>
         <nav className={headerClassName} >
-          <Link to="../index" smooth duration={1000}>
+          <Link to="top" smooth duration={1000}>
             {menu || 'Home'}
           </Link>
           <Link to="about" smooth duration={1000}>
@@ -40,8 +40,11 @@ const Header = () => {
           <Link to="news" smooth duration={1000}>
             {menu || 'News'}
           </Link>
+          <Link to="gallery" smooth duration={1000}>
+            {menu || 'Gallery'}
+          </Link>
           <Link to="footer" smooth duration={1000}>
-            {menu || 'Contact'}
+            {menu || 'Kontak'}
           </Link>
         </nav>
       </div>
