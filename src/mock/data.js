@@ -80,6 +80,14 @@ export const newsData = {
   tag:'',
 }
 
+// GALLERY DATA
+export const galleryData = {
+  date: '',
+  title: '',
+  intro: '',
+  img:'',
+}
+
 // CONTACT DATA
 export const contactData = {
   cta: '',
