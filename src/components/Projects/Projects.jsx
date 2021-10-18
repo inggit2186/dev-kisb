@@ -31,7 +31,7 @@ const Agenda = () => {
       <section id="agenda">
       <Container>
       <div className="agenda-head has-border">
-        <img class="agenda-icon" src="https://image.ibb.co/gpBreT/basic_alarm.png" alt="Alarm Icon" />
+        <img className="agenda-icon" src="https://image.ibb.co/gpBreT/basic_alarm.png" alt="Alarm Icon" />
         <h2>&nbsp;AGENDA</h2>
       </div>
       <div className="calendar">

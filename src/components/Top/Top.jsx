@@ -19,7 +19,7 @@ const Top = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-    
+
     let mainPosts = document.querySelectorAll(".main-post");
     let posts = document.querySelectorAll(".post");
 
@@ -29,12 +29,12 @@ const Top = () => {
     let currentMainPost = mainPosts[postIndex];
 
     setInterval(progress, 100); // 180
-
+     
     function progress() {
       if (i === 100) {
         i = -5;
         // reset progress bar
-        console.log(currentPost);
+        
         currentPost.querySelector(".progress-bar__fill").style.width = 0;
         document.querySelector(
           ".progress-bar--primary .progress-bar__fill"
